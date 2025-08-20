@@ -34,10 +34,10 @@ export const PARAMS = {
       {'seg': BUCKET + 'fluroglancer/assets/240924_dataframe_centroids.json'}),
   zarr_src: JSON.stringify({
     's1': {
-      'store': BUCKET,
-      'path': 'volumes/20240930/traces_fluroglancer/',
+      'store': 'http://localhost:8001/',
+      'path': 'synthetic_traces.zarr/',
       minTime: 0,
-      maxTime: 649,
+      maxTime: 200,
     },
   }),
   views: JSON.stringify([
@@ -54,7 +54,7 @@ export const PARAMS = {
       material_fn_args: [0, 's1'],
     },
   ]),
-  info: 'gain condition',
+  info: 'dots', // change this to condition of data
 };
 
 export const STATE = {
