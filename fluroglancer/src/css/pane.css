@@ -3,6 +3,8 @@
   top: 10px;
   right: 10px;
   opacity: 0.8;
+  overflow-y: auto;
+  max-height: 90vh;
 }
 
 /* Default wrapper view */
