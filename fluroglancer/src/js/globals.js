@@ -38,17 +38,18 @@ export const PARAMS = {
     //TODO make this an injected parameter with different data sources, setting up a zarr_src/calling it from a backend
 zarr_src: JSON.stringify({
     's1': {
-      'store': 'http://localhost:8001/', 
-      'path': 'synthetic_traces.zarr/', //TODO fix 
+      'store': 'https://ntransformer.blob.core.windows.net/zarr-store/synthetic_traces.zarr/', 
+      'path': '', //TODO fix 
       minTime: 0,
       maxTime: 200, //make this dynamically inputted according to the zapbench library 
     },
-        's2': { // Data source for the second view
-      'store': 'http://localhost:8001/',
-      'path': 'synthetic_traces.zarr/',
-      minTime: 201,
-      maxTime: 401, 
+        's2': {
+      'store': 'https://ntransformer.blob.core.windows.net/zarr-store/synthetic_traces.zarr/', 
+      'path': '', //TODO fix 
+      minTime: 0,
+      maxTime: 200, //make this dynamically inputted according to the zapbench library 
     },
+
   })
   ,
   views: JSON.stringify([ // TODO dynamic at runtime
