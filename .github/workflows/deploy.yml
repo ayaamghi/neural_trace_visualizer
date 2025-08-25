@@ -34,12 +34,13 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 18 # Use a recent, stable version of Node.js
+          # Using Node.js 18, a stable LTS version, for better compatibility with older dependencies.
+          node-version: 18 
           cache: 'npm'
           cache-dependency-path: fluroglancer/package-lock.json # Point cache to the correct lock file
       - name: Install dependencies
-        # IMPORTANT: We must tell npm where to run.
-        run: npm install --prefix fluroglancer
+        # Using 'npm ci' for a clean, reproducible install from the lock file.
+        run: npm ci --prefix fluroglancer
       - name: Build
         # IMPORTANT: We also tell npm where the project is to build it.
         run: npm run build --prefix fluroglancer
