@@ -34,7 +34,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20 # Use a recent, stable version of Node.js
+          node-version: 18 # Use a recent, stable version of Node.js
           cache: 'npm'
           cache-dependency-path: fluroglancer/package-lock.json # Point cache to the correct lock file
       - name: Install dependencies
