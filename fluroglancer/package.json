@@ -1,6 +1,7 @@
 {
   "name": "fluroglancer",
   "private": true,
+  "homepage": "https://ayaamghi.github.io/neural_trace_visualizer/",
   "version": "0.4.0",
   "type": "module",
   "scripts": {
