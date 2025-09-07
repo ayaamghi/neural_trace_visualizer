@@ -38,7 +38,7 @@ import * as utils from './utils.js';
 function exportState() {
   const url = new URL(window.location.href);
   url.searchParams.set(
-      'p', encodeURIComponent(JSON.stringify(pane.exportState())));
+      'p', JSON.stringify(pane.exportState()));
   window.history.replaceState(null, null, url);
 }
 
