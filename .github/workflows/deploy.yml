@@ -45,6 +45,10 @@ jobs:
         working-directory: ./fluroglancer
         run: npm run build
 
+      - name: Verify build output
+        run: ls -R fluroglancer
+
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
