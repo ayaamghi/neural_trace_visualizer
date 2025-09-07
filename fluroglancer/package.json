@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@0b5vr/tweakpane-plugin-rotation": "^0.2.0",
-    "@pangenerator/tweakpane-textarea-plugin": "github:kitschpatrol/tweakpane-textarea-plugin#tweakpane-v4",
+    "@pangenerator/tweakpane-textarea-plugin": "^2.0.0",
     "@tweakpane/plugin-essentials": "^0.2.0",
     "colormap": "^2.3.2",
     "three": "^0.173.0",
