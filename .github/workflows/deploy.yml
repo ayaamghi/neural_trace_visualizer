@@ -33,16 +33,16 @@ jobs:
           node-version: 20
           cache: 'npm'
           # Tell the cache where to find the package-lock.json
-          cache-dependency-path: vite-project/package-lock.json
+          cache-dependency-path: fluroglancer/package-lock.json
 
       - name: Install dependencies
         # Run this command inside the subfolder
-        working-directory: ./vite-project
+        working-directory: ./fluroglancer
         run: npm ci
 
       - name: Build
         # Run this command inside the subfolder
-        working-directory: ./vite-project
+        working-directory: ./fluroglancer
         run: npm run build
 
       - name: Setup Pages
@@ -52,7 +52,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3 # Using v3 for broader compatibility
         with:
           # Point to the dist folder inside the subfolder
-          path: './vite-project/dist'
+          path: './fluroglancer/dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
